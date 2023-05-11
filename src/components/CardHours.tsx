@@ -44,18 +44,18 @@ const backgroundColor =
     return (
       <div
         key={weatherInfoHours.dt}
-        className="flex flex-col items-center text-center gap-5 p-5 rounded-[15%] max-w-[300px] mx-auto"
+        className="flex flex-col items-center text-center gap-5 p-5 rounded-[15%] w-[200px] sm:w-[400px] mx-auto"
         style={{ backgroundColor }}
       >
         <div className="flex w-full gap-5 justify-between">
           <span>{`${
             dt_txt && dt_txt.split(" ")[1].split(":").slice(0, 2).join(":")
           } hrs`}</span>
-          <span>{
-            dt_txt && dt_txt.split(" ")[0].split("-").reverse().join("/")
-          }</span>
+          <span>
+            {dt_txt && dt_txt.split(" ")[0].split("-").reverse().join("/")}
+          </span>
         </div>
-        <div className="flex items-center gap-4 font-bold">
+        <div className="flex flex-col sm:flex-row  items-center gap-4 font-bold">
           <img src={iconSrc} alt={weather[0].description} />
           <p>
             {weather[0].description.charAt(0).toUpperCase() +
