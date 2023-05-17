@@ -66,10 +66,10 @@ export const icons: WeatherIcon = {
   },
   "50d": {
     icon: "/img/mist.svg",
-    background: "whitesmoke",
+    background: "cadetblue",
   },
   "50n": {
     icon: "/img/mist.svg",
-    background: "whitesmoke",
+    background: "cadetblue",
   },
 };
