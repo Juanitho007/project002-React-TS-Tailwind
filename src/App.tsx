@@ -85,7 +85,7 @@ const App = () => {
   return (
     <div
       style={{backgroundColor}}
-      className= "min-h-screen min-w-full flex flex-col items-center content-center justify-between mx-auto"
+      className= "min-h-screen min-w-full flex flex-col items-center content-center justify-between mx-auto gap-6"
     >
       <Search
         cityName={cityName}

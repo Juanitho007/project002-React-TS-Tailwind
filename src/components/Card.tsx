@@ -44,8 +44,7 @@ const Card = ({
   return (
     <div className="flex text-center  items-center mx-auto max-w-2xl">
       <div
-        className="flex flex-col gap-5 px-8 rounded-tr-[18%] rounded-bl-[18%] w-[250px] sm:w-[450px]"
-        style={{ backgroundColor: "rgba(255,255,255,0.2)" }}
+        className="flex flex-col gap-5 px-8 rounded-tr-[18%] rounded-bl-[18%] w-[250px] sm:w-[450px] bg-white/40 shadow-box "
       >
         <article className="flex items-center justify-center flex-wrap sm:flex-nowrap">
           <section className="p-4 flex flex-col items-center justify-center gap-4 sm:border-r-4">
@@ -54,7 +53,7 @@ const Card = ({
             </h1>
             <div className="flex flex-wrap items-center font-semibold gap-3 justify-center">
               <img
-                className="w-min-[80px]"
+                className="w-min-[80px] animate-bounce animate-infinite animate-alternate"
                 src={iconSrc}
                 alt={weather[0].description}
               />

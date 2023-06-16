@@ -56,7 +56,11 @@ const backgroundColor =
           </span>
         </div>
         <div className="flex flex-col sm:flex-row  items-center gap-4 font-bold">
-          <img src={iconSrc} alt={weather[0].description} />
+          <img
+            src={iconSrc}
+            alt={weather[0].description}
+            className="animate-bounce animate-infinite animate-alternate"
+          />
           <p>
             {weather[0].description.charAt(0).toUpperCase() +
               weather[0].description.slice(1)}
